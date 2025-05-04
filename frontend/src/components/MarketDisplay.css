@@ -1,0 +1,148 @@
+.market-display {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.market-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.day-advance-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.cooldown-timer {
+  background-color: #ecf0f1;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.time-remaining {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.advance-day-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.advance-day-btn:hover {
+  background-color: #2980b9;
+}
+
+.advance-day-btn:disabled {
+  background-color: #bdc3c7;
+}
+
+.stocks-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.stock-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.stock-row:hover {
+  background-color: #ecf0f1;
+}
+
+.change.positive {
+  color: #27ae60;
+}
+
+.change.negative {
+  color: #e74c3c;
+}
+
+.neutral {
+  color: #7f8c8d;
+}
+
+.sortable-header {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-right: 18px;
+}
+
+.sortable-header:hover {
+  background-color: #f5f5f5;
+}
+
+.sort-indicator {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* Neutral state - gray */
+.neutral-indicator {
+  color: #bdc3c7;
+  opacity: 0.6;
+}
+
+/* Active states */
+.ascending-indicator {
+  color: #e74c3c; /* Red for ascending (previously green) */
+  font-weight: bold;
+}
+
+.descending-indicator {
+  color: #27ae60; /* Green for descending (previously red) */
+  font-weight: bold;
+}
+
+.sortable-header:hover .neutral-indicator {
+  opacity: 1;
+  color: #95a5a6;
+}
+
+.static-indicator {
+  font-size: 0.75rem;
+  color: #95a5a6;
+  background-color: #ecf0f1;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sector-cell {
+  color: #2c3e50;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 2px 6px;
+}
+
+.stocks-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stocks-list th, .stocks-list td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.stocks-list th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+} 

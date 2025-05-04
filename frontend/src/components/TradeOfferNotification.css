@@ -1,0 +1,88 @@
+.trade-offer-notification {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  width: 350px;
+  z-index: 1900; /* Lower than modal but higher than most content */
+  transform: translateX(400px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  cursor: pointer;
+}
+
+.trade-offer-notification.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.trade-notification-icon {
+  font-size: 2.2rem;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff0e0;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.trade-notification-content {
+  flex: 1;
+}
+
+.trade-notification-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+  color: #e67e22;
+  text-transform: uppercase;
+}
+
+.trade-summary {
+  margin: 8px 0;
+}
+
+.trade-summary p {
+  margin: 4px 0;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.trade-notification-hint {
+  font-size: 0.75rem;
+  color: #7f8c8d;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.trade-notification-close {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #999;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  z-index: 2;
+}
+
+.trade-notification-close:hover {
+  color: #333;
+}
+
+/* Add space for multiple notifications */
+.trade-offer-notification + .achievement-notification {
+  bottom: 120px;
+} 

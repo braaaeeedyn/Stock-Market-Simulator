@@ -1,0 +1,293 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.app {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.game-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* All buttons share these base styles */
+.game-controls button {
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon buttons */
+.achievement-button, .economic-button, .settings-button {
+  width: 40px;
+  font-size: 20px;
+}
+
+/* Button colors */
+.achievement-button {
+  background-color: #f39c12;
+  color: white;
+}
+
+.achievement-button:hover {
+  background-color: #e67e22;
+  transform: rotate(30deg) scale(1.05);
+}
+
+.economic-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.economic-button:hover {
+  background-color: #2980b9;
+  transform: rotate(30deg) scale(1.05);
+}
+
+/* Settings button and dropdown */
+.settings-container {
+  position: relative;
+}
+
+.settings-button {
+  background-color: #34495e;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.settings-button:hover {
+  background-color: #2c3e50;
+  transform: rotate(30deg) scale(1.05);
+}
+
+/* Center modal settings menu */
+.settings-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.settings-modal {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  overflow: hidden;
+  animation: fade-in 0.2s ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.settings-modal-header {
+  background-color: #34495e;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-modal-header .close-button {
+  position: static;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  width: auto;
+  height: auto;
+}
+
+.settings-modal-header .close-button:hover {
+  background-color: transparent;
+  color: #ccc;
+}
+
+.settings-modal-content {
+  padding: 0;
+}
+
+.settings-modal button {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.settings-modal button:hover {
+  background-color: #f5f5f5;
+}
+
+.settings-modal button:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.settings-modal button svg {
+  margin-right: 10px;
+  color: #555;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  flex: 1;
+  min-width: 500px;
+}
+
+.right-panel {
+  flex: 1;
+  min-width: 500px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1100px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  
+  .left-panel, .right-panel {
+    width: 100%;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.indicators-container {
+  background-color: white;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 900px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+}
+
+.close-button {
+  font-size: 28px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.close-button:hover {
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.trade-offers-button {
+  background-color: #e67e22;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.trade-offers-button:hover {
+  background-color: #d35400;
+  transform: rotate(30deg) scale(1.05);
+} 

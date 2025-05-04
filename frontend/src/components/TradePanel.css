@@ -1,0 +1,114 @@
+.trade-panel {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.trade-panel h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.current-price {
+  background-color: #f1f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.current-price .price {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.trade-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 10px;
+  background-color: #f1f1f1;
+  color: #7f8c8d;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.action-btn.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.quantity-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-input label {
+  font-weight: 500;
+}
+
+.quantity-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.trade-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trade-total {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.trade-total span {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.trade-button {
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.trade-button.buy {
+  background-color: #27ae60;
+}
+
+.trade-button.buy:hover {
+  background-color: #219653;
+}
+
+.trade-button.sell {
+  background-color: #e74c3c;
+}
+
+.trade-button.sell:hover {
+  background-color: #c0392b;
+}
+
+.trade-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+} 

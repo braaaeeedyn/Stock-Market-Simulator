@@ -1,0 +1,177 @@
+[
+    {
+        "symbol": "TECH",
+        "name": "Tech Innovations Inc",
+        "sector": "technology",
+        "initial_price": 150.00,
+        "volatility": 0.8
+    },
+    {
+        "symbol": "OILC",
+        "name": "Oil Consolidated",
+        "sector": "energy",
+        "initial_price": 85.50,
+        "volatility": 0.6
+    },
+    {
+        "symbol": "HEAL",
+        "name": "HealthCare Partners",
+        "sector": "healthcare",
+        "initial_price": 120.75,
+        "volatility": 0.5
+    },
+    {
+        "symbol": "SFTW",
+        "name": "Software Solutions Corp",
+        "sector": "technology",
+        "initial_price": 210.50,
+        "volatility": 0.75
+    },
+    {
+        "symbol": "CCHP",
+        "name": "Cloud Computing Holdings",
+        "sector": "technology",
+        "initial_price": 180.25,
+        "volatility": 0.85
+    },
+    {
+        "symbol": "SEMI",
+        "name": "Semiconductor Advanced",
+        "sector": "technology",
+        "initial_price": 95.75,
+        "volatility": 0.9
+    },
+    {
+        "symbol": "GREN",
+        "name": "Green Energy Systems",
+        "sector": "energy",
+        "initial_price": 45.30,
+        "volatility": 0.7
+    },
+    {
+        "symbol": "SLAR",
+        "name": "Solar Solutions Inc",
+        "sector": "energy",
+        "initial_price": 62.15,
+        "volatility": 0.75
+    },
+    {
+        "symbol": "PHRM",
+        "name": "Pharmaceutical Research",
+        "sector": "healthcare",
+        "initial_price": 145.20,
+        "volatility": 0.65
+    },
+    {
+        "symbol": "MDEV",
+        "name": "Medical Devices Co",
+        "sector": "healthcare",
+        "initial_price": 88.40,
+        "volatility": 0.55
+    },
+    {
+        "symbol": "BNKG",
+        "name": "Banking Group International",
+        "sector": "finance",
+        "initial_price": 105.30,
+        "volatility": 0.4
+    },
+    {
+        "symbol": "INSUR",
+        "name": "Insurance Holdings Ltd",
+        "sector": "finance",
+        "initial_price": 78.60,
+        "volatility": 0.35
+    },
+    {
+        "symbol": "FNTECH",
+        "name": "Financial Technology Solutions",
+        "sector": "finance",
+        "initial_price": 115.75,
+        "volatility": 0.65
+    },
+    {
+        "symbol": "RETAIL",
+        "name": "Retail Chain Group",
+        "sector": "consumer",
+        "initial_price": 42.30,
+        "volatility": 0.3
+    },
+    {
+        "symbol": "FDBEV",
+        "name": "Food & Beverage Corp",
+        "sector": "consumer",
+        "initial_price": 68.25,
+        "volatility": 0.25
+    },
+    {
+        "symbol": "LUXGDS",
+        "name": "Luxury Goods International",
+        "sector": "consumer",
+        "initial_price": 195.40,
+        "volatility": 0.45
+    },
+    {
+        "symbol": "MANUF",
+        "name": "Manufacturing Industries",
+        "sector": "industrial",
+        "initial_price": 76.50,
+        "volatility": 0.4
+    },
+    {
+        "symbol": "AERO",
+        "name": "Aerospace Technologies",
+        "sector": "industrial",
+        "initial_price": 142.80,
+        "volatility": 0.5
+    },
+    {
+        "symbol": "TELCO",
+        "name": "Telecom Services Provider",
+        "sector": "telecom",
+        "initial_price": 53.25,
+        "volatility": 0.4
+    },
+    {
+        "symbol": "MEDIA",
+        "name": "Global Media Enterprises",
+        "sector": "telecom",
+        "initial_price": 87.60,
+        "volatility": 0.6
+    },
+    {
+        "symbol": "REIT",
+        "name": "Real Estate Investment Trust",
+        "sector": "realestate",
+        "initial_price": 65.30,
+        "volatility": 0.3
+    },
+    {
+        "symbol": "PRPDV",
+        "name": "Property Development Co",
+        "sector": "realestate",
+        "initial_price": 48.75,
+        "volatility": 0.4
+    },
+    {
+        "symbol": "MINE",
+        "name": "Mining Corporation",
+        "sector": "materials",
+        "initial_price": 32.40,
+        "volatility": 0.6
+    },
+    {
+        "symbol": "METAL",
+        "name": "Metals & Minerals Ltd",
+        "sector": "materials",
+        "initial_price": 41.65,
+        "volatility": 0.55
+    },
+    {
+        "symbol": "CHEMS",
+        "name": "Chemical Solutions Group",
+        "sector": "materials",
+        "initial_price": 73.20,
+        "volatility": 0.5
+    }
+]

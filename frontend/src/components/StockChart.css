@@ -1,0 +1,34 @@
+.stock-chart {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.stock-chart h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.chart-container {
+  height: 300px;
+  position: relative;
+}
+
+.stock-chart-loading, 
+.stock-chart-error,
+.stock-chart-placeholder {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7f8c8d;
+  font-style: italic;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.stock-chart-error {
+  color: #e74c3c;
+} 

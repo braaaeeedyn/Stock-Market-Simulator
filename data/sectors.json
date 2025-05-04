@@ -1,0 +1,38 @@
+{
+    "technology": {
+        "description": "High-growth tech companies",
+        "base_volatility": 0.7
+    },
+    "energy": {
+        "description": "Oil, gas and renewable energy",
+        "base_volatility": 0.6
+    },
+    "healthcare": {
+        "description": "Pharmaceuticals and medical services",
+        "base_volatility": 0.5
+    },
+    "finance": {
+        "description": "Banks, insurance, and financial services",
+        "base_volatility": 0.4
+    },
+    "consumer": {
+        "description": "Consumer goods and retail",
+        "base_volatility": 0.3
+    },
+    "industrial": {
+        "description": "Manufacturing and industrial services",
+        "base_volatility": 0.45
+    },
+    "telecom": {
+        "description": "Telecommunications and media",
+        "base_volatility": 0.5
+    },
+    "realestate": {
+        "description": "Real estate investment and development",
+        "base_volatility": 0.35
+    },
+    "materials": {
+        "description": "Raw materials and mining",
+        "base_volatility": 0.55
+    }
+}

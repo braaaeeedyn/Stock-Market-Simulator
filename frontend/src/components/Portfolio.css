@@ -1,0 +1,102 @@
+.portfolio {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.portfolio-summary {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-item .label {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+}
+
+.summary-item .value {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.holdings, .transaction-history {
+  margin-bottom: 20px;
+}
+
+.holdings h3, .transaction-history h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #34495e;
+}
+
+.no-holdings, .no-transactions {
+  padding: 15px;
+  text-align: center;
+  color: #7f8c8d;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.holdings-table, .transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.holdings-table th, .transactions-table th {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: left;
+}
+
+.holdings-table td, .transactions-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* 7-Day Performance styling */
+.positive-change {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.negative-change {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.transactions-table tr.buy td:first-child {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.transactions-table tr.sell td:first-child {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.transactions-table tr.trade td:first-child {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.transactions-table tr.trade td {
+  background-color: #f0f7ff;
+} 

@@ -1,0 +1,157 @@
+.achievement-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  height: 80%;
+  max-height: 600px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.achievement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.achievement-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.achievement-progress {
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #3498db;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.achievements-grid {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.achievement-item {
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e0e0e0;
+}
+
+.achievement-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-item.unlocked {
+  background-color: #e8f5fe;
+  border-color: #3498db;
+}
+
+.achievement-icon {
+  font-size: 2rem;
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-details {
+  flex: 1;
+}
+
+.achievement-name {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.achievement-description {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.locked-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.achievement-item.locked {
+  opacity: 0.7;
+}
+
+.achievement-panel.in-main-menu {
+  position: relative;
+  transform: none;
+  top: auto;
+  left: auto;
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  max-height: 80vh;
+  margin: 0 auto;
+  z-index: 1;
+} 

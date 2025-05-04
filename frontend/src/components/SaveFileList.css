@@ -1,0 +1,139 @@
+.save-file-list {
+  width: 100%;
+}
+
+.save-file-list h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.save-slots {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.save-slot {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.save-slot:hover {
+  border-color: #bdc3c7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.save-slot.empty {
+  background-color: #f1f1f1;
+  color: #7f8c8d;
+}
+
+.save-info {
+  flex: 1;
+}
+
+.save-info h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.save-details {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.day {
+  color: #3498db;
+  font-weight: 500;
+}
+
+.cash {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.timestamp {
+  color: #7f8c8d;
+  font-size: 0.8rem;
+}
+
+.holdings {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.save-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.load-button, .delete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.load-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.load-button:hover {
+  background-color: #2980b9;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.empty-slot h3 {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin: 5px 0 0 0;
+}
+
+.back-button {
+  padding: 10px 15px;
+  background-color: #7f8c8d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  display: block;
+  margin: 0 auto;
+}
+
+.back-button:hover {
+  background-color: #6c7a7d;
+} 
