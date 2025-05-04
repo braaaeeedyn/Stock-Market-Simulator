@@ -124,17 +124,3 @@ The application will be available at http://localhost:3000
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Development Roadmap
-
-- Phase 1: Core Market Simulation (Complete)
-- Phase 2: Player Interface & Decision Systems (Complete)
-- Phase 3: Progression & Replayability (Planned)
-  - Computer traders with different strategies
-  - Career mode with unlockable assets and tools
-  - Historical market scenarios based on real events
-  - Advanced analytics and prediction tools
