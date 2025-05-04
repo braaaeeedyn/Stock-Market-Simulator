@@ -36,12 +36,6 @@ The simulator features dynamic price movements influenced by sector trends, econ
 - **Sound Effects**: Audio feedback for trading, day advancement, and important events
 - **Optimized Performance**: Fast processing between day advancements
 
-## Screenshots
-
-![Market Dashboard](screenshots/dashboard.png)
-![Portfolio View](screenshots/portfolio.png)
-![Trade Interface](screenshots/trading.png)
-
 ## Installation Instructions
 
 ### Prerequisites
